@@ -1,0 +1,38 @@
+\begin{tikzpicture}[scale=0.7]
+
+\coordinate (label-abc) at (0,3);
+\coordinate (label-ab) at (-2,1);
+\coordinate (label-ac) at (0,1);
+\coordinate (label-bc) at (2,1);
+\coordinate (label-a) at (-2,-1);
+\coordinate (label-b) at (0,-1);
+\coordinate (label-c) at (2,-1);
+\coordinate (label-empty-set) at (0,-3);
+
+\node at (label-abc) {$\{ a, b, c \}$};
+\node at (label-ab) {$\{ a, b \}$};
+\node at (label-ac) {$\{ a, c \}$};
+\node at (label-bc) {$\{ b, c \}$};
+\node at (label-a) {$\{ a \}$};
+\node at (label-b) {$\{ b \}$};
+\node at (label-c) {$\{ c \}$};
+\node at (label-empty-set) {$\emptyset$};
+
+\draw  ([xshift=-10,yshift=-10]label-abc) -- ([yshift=10]label-ab);
+\draw  ([yshift=-10]label-abc) -- ([yshift=10]label-ac);
+\draw  ([xshift=10,yshift=-10]label-abc) -- ([yshift=10]label-bc);
+
+\draw  ([yshift=-10]label-ab) -- ([yshift=10]label-a);
+\draw  ([xshift=10,yshift=-10]label-ab) -- ([xshift=-10,yshift=10]label-b);
+
+\draw  ([xshift=-10,yshift=-10]label-ac) -- ([xshift=10,yshift=10]label-a);
+\draw  ([xshift=10,yshift=-10]label-ac) -- ([xshift=-10,yshift=10]label-c);
+
+\draw  ([xshift=-10,yshift=-10]label-bc) -- ([xshift=10,yshift=10]label-b);
+\draw  ([yshift=-10]label-bc) -- ([yshift=10]label-c);
+
+\draw  ([yshift=-10]label-a) -- ([xshift=-10,yshift=10]label-empty-set);
+\draw  ([yshift=-10]label-b) -- ([yshift=10]label-empty-set);
+\draw  ([yshift=-10]label-c) -- ([xshift=10,yshift=10]label-empty-set);
+
+\end{tikzpicture}

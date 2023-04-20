@@ -1,0 +1,29 @@
+\begin{tikzpicture}[scale=1.5]
+
+%\draw (-0.75, -0.55) rectangle (2.1,2.15); %set bounding box
+
+
+\coordinate (x-axis-start) at (-1.0,0);
+\coordinate (x-axis-end) at (2.5,0);
+\coordinate (y-axis-start) at (0,-1.0);
+\coordinate (y-axis-end) at (0,2.5);
+\coordinate (origin) at (0,0);
+\coordinate (unit-x) at (1,0);
+\coordinate (unit-y) at (0,1);
+\coordinate (pt-1-1) at (1,1);
+\coordinate (pt-2-1) at (2,1);
+
+\node [right] at  (y-axis-end) {$y$};
+\node [below] at (x-axis-end) {$x$};
+\node [below] at (unit-x) {$(1,0)$};
+\node [above] at (pt-1-1) {$(1,1)$};
+
+\draw [->]  (x-axis-start) -- (x-axis-end);
+\draw  [->] (y-axis-start)  -- (y-axis-end);
+
+\draw [->, very thick, black]  (origin) -- (pt-1-1);
+\draw  [->, very thick, black] (origin) -- (unit-x);
+
+\draw (pt-1-1) -- (pt-2-1) -- (unit-x);
+
+\end{tikzpicture}

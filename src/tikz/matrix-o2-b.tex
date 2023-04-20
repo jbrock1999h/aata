@@ -1,0 +1,32 @@
+
+\begin{tikzpicture}[scale=2]
+
+%\draw (-1.3, -1.1) rectangle (2.3,2.0); %set bounding box
+
+
+
+\coordinate (x-axis-start) at (-1.3,0);
+\coordinate (x-axis-end) at (2.3,0);
+\coordinate (y-axis-start) at (0,-1.3);
+\coordinate (y-axis-end) at (0,2.3);
+\coordinate (origin) at (0,0);
+\coordinate (cos-sin) at (30:1.25);
+\coordinate (sin-cos) at (120:1.25);
+\coordinate (arc-start) at (0.5,0);
+\coordinate (arc-label) at (0.5,0.15);
+
+\node [below] at (x-axis-end) {$x$};
+\node [right] at (y-axis-end) {$y$};
+\node [right] at (arc-label) {$\theta$};
+
+\draw [->]  (x-axis-start) -- (x-axis-end);
+\draw  [->] (y-axis-start) -- (y-axis-end);
+
+\draw [->, very thick, black]  (origin) -- ++(sin-cos) node [above] {$(\sin \theta, - \cos \theta)$};
+\draw  [->, very thick, black] (origin) -- ++(cos-sin) node [right] {$(\cos \theta, \sin \theta)$};
+
+\draw (arc-start) arc (0:30:0.5);
+
+\end{tikzpicture}
+
+

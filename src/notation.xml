@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- Abstract Algebra: Theory and Applications        -->
+<!--                                                  -->
+<!-- Text: Copyright (C) 1997-2022  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2022  Robert A. Beezer  -->
+<!-- See the file COPYING for copying conditions.     -->
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- See the file COPYING for copying conditions.     -->
+<appendix permid="MHr">
+  <title>Notation</title>
+  <introduction permid="mZo">
+    <p permid="TQr">
+      The following table defines the notation used in this book.
+      Page numbers or references refer to the first appearance of each symbol.
+    </p>
+  </introduction>
+
+  <notation-list/>
+</appendix>

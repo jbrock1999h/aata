@@ -1,0 +1,91 @@
+\begin{tikzpicture}[scale=1]
+
+%Top diagram
+
+\coordinate (top-A) at (-7.5,11);
+\coordinate (top-B) at (-1.5,11);
+\coordinate (top-C) at (4.5,11);
+
+\coordinate (top-f) at (-3,10);
+\coordinate (top-g) at (3,10);
+
+\coordinate (top-A-1) at (-6, 9.5);
+\coordinate (top-A-2) at (-6, 8);
+\coordinate (top-A-3) at (-6, 6.5);
+
+\coordinate (top-B-a) at (0,9.5);
+\coordinate (top-B-b) at (0,8);
+\coordinate (top-B-c) at (0,6.5);
+
+\coordinate (top-C-X) at (6,9.5);
+\coordinate (top-C-Y) at (6,8);
+\coordinate (top-C-Z) at (6,6.5);
+
+\draw (top-A-2) ellipse (2 and 3);
+\draw (top-B-b) ellipse (2 and 3);
+\draw (top-C-Y) ellipse (2 and 3);
+
+\node at (top-A) {$A$};
+\node at (top-B) {$B$};
+\node at (top-C) {$C$};
+
+\node at (top-f) {$f$};
+\node at (top-g) {$g$};
+
+\node at (top-A-1) {1};
+\node at (top-A-2) {2};
+\node at (top-A-3) {3};
+
+\node at (top-B-a) {$a$};
+\node at (top-B-b) {$b$};
+\node at (top-B-c) {$c$};
+
+\node at (top-C-X) {$X$};
+\node at (top-C-Y) {$Y$};
+\node at (top-C-Z) {$Z$};
+
+\draw [->] ([xshift=10]top-A-1) -- ([xshift=-10]top-B-b);
+\draw [->] ([xshift=10]top-A-2) -- ([xshift=-10]top-B-c);
+\draw [->] ([xshift=10]top-A-3) -- ([xshift=-10]top-B-a);
+
+\draw [->] ([xshift=10]top-B-a) -- ([xshift=-10,yshift=5]top-C-Z);
+\draw [->] ([xshift=10]top-B-b) -- ([xshift=-10]top-C-Z);
+\draw [->] ([xshift=10]top-B-c) -- ([xshift=-10]top-C-X);
+
+%Bottom diagram
+
+\coordinate (bottom-A) at (-5,3);
+\coordinate (bottom-C) at (1.5,3);
+
+\coordinate (bottom-gof) at (0,2.5);
+
+\coordinate (bottom-A-1) at (-3,1.5);
+\coordinate (bottom-A-2) at (-3,0);
+\coordinate (bottom-A-3) at (-3,-1.5);
+
+\coordinate (bottom-C-X) at (3,1.5);
+\coordinate (bottom-C-Y) at (3,0);
+\coordinate (bottom-C-Z) at (3,-1.5);
+
+
+\draw (bottom-A-2) ellipse (2 and 3);
+\draw (bottom-C-Y) ellipse (2 and 3);
+
+\node at (bottom-A) {$A$};
+\node at (bottom-C) {$C$};
+\node at (bottom-gof) {$g \circ f$};
+
+\node at (bottom-A-1) {1};
+\node at (bottom-A-2) {2};
+\node at (bottom-A-3) {3};
+\node at (bottom-C-X) {$X$};
+\node at (bottom-C-Y) {$Y$};
+\node at (bottom-C-Z) {$Z$};
+
+
+\draw [->] ([xshift=10]bottom-A-1) -- ([xshift=-10,yshift=5]bottom-C-Z);
+\draw [->] ([xshift=10]bottom-A-2) -- ([xshift=-10]bottom-C-X);
+\draw [->] ([xshift=10]bottom-A-3) -- ([xshift=-10]bottom-C-Z);
+
+\end{tikzpicture}
+

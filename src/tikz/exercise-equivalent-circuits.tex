@@ -1,0 +1,46 @@
+\begin{tikzpicture}[scale=0.7,node distance=5mm, text height=1.5ex,text depth=.25ex]
+
+%left circuit
+
+\coordinate (a-left-top) at (2,1);
+\coordinate (b-left-top) at (3,1);
+\coordinate (c-left-top) at (4,1);
+
+\node at (a-left-top) {$a$};
+\node at (b-left-top) {$b$};
+\node at (c-left-top) {$c$};
+
+\coordinate (a-prime-left-mid) at (2.5,0);
+\coordinate (b-left-mid) at (3.5,0);
+
+\node at (a-prime-left-mid) {$a'$};
+\node at (b-left-mid) {$b$};
+
+\coordinate (a-left-bottom) at (2.5,-1);
+\coordinate (c-prime-left-bottom) at (3.5,-1);
+
+\node at (a-left-bottom) {$a$};
+\node at (c-prime-left-bottom) {$c'$};
+
+\draw (1,0) -- (1,1) -- ([xshift=-10]a-left-top)  ([xshift=10]a-left-top) -- ([xshift=-10]b-left-top)  ([xshift=10]b-left-top) -- ([xshift=-10]c-left-top)  ([xshift=10]c-left-top) -- (5,1) -- (5,0);
+
+\draw (0,0) -- ([xshift=-10]a-prime-left-mid)  ([xshift=10]a-prime-left-mid)  -- ([xshift=-10]b-left-mid)  ([xshift=10]b-left-mid) -- (6,0);
+
+\draw (1,0) -- (1,-1) --  ([xshift=-10]a-left-bottom)   ([xshift=10]a-left-bottom) -- ([xshift=-10]c-prime-left-bottom) ([xshift=10]c-prime-left-bottom) -- (5,-1) -- (5,0);
+
+%right circuit
+
+\coordinate (a-right-top) at (9,1);
+\coordinate (a-right-bottom) at (9,-1);
+\coordinate (b-right-top) at (10,1);
+\coordinate (c-prime-right-bottom) at (10,-1);
+
+\node at (a-right-top) {$a$};
+\node at (a-right-bottom) {$a$};
+\node at  (b-right-top) {$b$};
+\node at (c-prime-right-bottom){$c'$};
+
+\draw (8,0) -- (8,1) -- ([xshift=-10]a-right-top)  ([xshift=10]a-right-top)  -- ([xshift=-10]b-right-top)  ([xshift=10]b-right-top)-- (11,1) -- (11,0);
+\draw (8,0) -- (8,-1) -- ([xshift=-10]a-right-bottom) ([xshift=10]a-right-bottom) -- ([xshift=-10]c-prime-right-bottom)  ([xshift=10]c-prime-right-bottom) -- (11,-1) -- (11,0);
+\draw (7,0) -- (8,0) (11,0) -- (12,0);
+\end{tikzpicture}

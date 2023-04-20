@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- Abstract Algebra: Theory and Applications        -->
+<!--                                                  -->
+<!-- Text: Copyright (C) 1997-2022  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2022  Robert A. Beezer  -->
+<!-- See the file COPYING for copying conditions.     -->
+<!-- This file is part of the book                    -->
+<!--                                                  -->
+<!-- See the file COPYING for copying conditions.     -->
+
+<!-- Publisher file for braille (electronic, embossed -->
+
+<!-- 2022-11-02 Copied from public.xml                -->
+
+<publication>
+
+    <source>
+        <!-- Temporarily suppress Sage "computer code" until -->
+        <!-- we get a handle on correct braille code         -->
+        <version include="sage-blurb"/>
+        <!-- <version include="sage-info sage-exercises"/> -->
+        <directories external="../external" generated="../images"/>
+    </source>
+
+    <common>
+        <!-- level 1 chunking makes multiple BRF files -->
+        <chunking level="0"/>
+        <tableofcontents level="2"/>
+        <exercise-divisional hint="no"/>
+    </common>
+
+    <numbering>
+        <divisions level="2"/>
+        <blocks    level="1"/>
+        <equations level="1"/>
+        <footnotes level="0"/>
+    </numbering>
+
+    <!-- Not relevant (?) -->
+    <latex/>
+    <html/>
+
+</publication>

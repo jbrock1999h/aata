@@ -1,0 +1,30 @@
+\begin{tikzpicture}[scale=0.8]
+
+\coordinate (x-axis-min) at (-8,0);
+\coordinate (x-axis-max) at (8,0);
+\coordinate (y-axis-min) at (0,-5);
+\coordinate (y-axis-max) at (0,5);
+\coordinate (origin) at (0,0);
+
+\draw  [->] (x-axis-min) -- (x-axis-max);
+\draw  [->] (y-axis-min) -- (y-axis-max);
+
+\node [right] at (y-axis-max) {$y$};
+\node [below] at (x-axis-max) {$x$};
+\node [below right] at (origin) {$0$};
+
+\coordinate (pt-2-3) at (2,3);
+\coordinate (pt-minus3-2) at (-3,2);
+\coordinate (pt-1-minus2) at (1,-2);
+
+\filldraw[fill=black, draw=black] (pt-2-3) circle (0.05cm);
+\node [right] at (pt-2-3) {$z_1 = 2 + 3i$};
+
+\filldraw[fill=black, draw=black] (pt-minus3-2) circle (0.05cm);
+\node [left] at (pt-minus3-2) {$z_3 = -3 + 2i$};
+
+\filldraw[fill=black, draw=black] (pt-1-minus2)  circle (0.05cm);
+\node [right] at (pt-1-minus2) {$z_2 = 1 -  2i$};
+
+\end{tikzpicture}
+

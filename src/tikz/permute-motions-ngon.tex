@@ -1,0 +1,63 @@
+\begin{tikzpicture}[scale=0.8]
+
+%draw rotation
+\draw (-4,5.5)  +(45:2) coordinate(rotate-left-2) -- +(90:2) coordinate(rotate-left-1) -- +(135:2) coordinate(rotate-left-8) -- +(180:2) coordinate(rotate-left-7) -- +(225:2) coordinate(rotate-left-6) -- +(270:2) coordinate(rotate-left-5) -- +(315:2) coordinate(rotate-left-4) -- +(360:2) coordinate(rotate-left-3) -- cycle;
+
+\node [above] at (rotate-left-1) {$1$};
+\node [above right] at (rotate-left-2) {$2$};
+\node [right] at (rotate-left-3) {$3$};
+\node [below right] at (rotate-left-4) {$4$};
+\node [below] at (rotate-left-5) {$5$};
+\node [below left] at (rotate-left-6) {$6$};
+\node [left] at (rotate-left-7) {$7$};
+\node [above left] at (rotate-left-8) {$8$};
+
+\draw (4,5.5)  +(45:2) coordinate(rotate-right-3) -- +(90:2) coordinate(rotate-right-2) -- +(135:2) coordinate(rotate-right-1) -- +(180:2) coordinate(rotate-right-8) -- +(225:2) coordinate(rotate-right-7) -- +(270:2) coordinate(rotate-right-6) -- +(315:2) coordinate(rotate-right-5) -- +(360:2) coordinate(rotate-right-4) -- cycle;
+
+\node [above] at (rotate-right-1) {$1$};
+\node [above right] at (rotate-right-2) {$2$};
+\node [right] at (rotate-right-3) {$3$};
+\node [below right] at (rotate-right-4) {$4$};
+\node [below] at (rotate-right-5) {$5$};
+\node [below left] at (rotate-right-6) {$6$};
+\node [left] at (rotate-right-7) {$7$};
+\node [left] at (rotate-right-8) {$8$};
+
+\coordinate (rotate-label) at (0,5.5);
+\coordinate (rotate-head-arrow) at (-1.2,5.5);
+\coordinate (rotate-tail-arrow) at (1.2,5.5);
+
+\draw [->] (rotate-head-arrow) -- (rotate-tail-arrow) ;
+\node [above] at (rotate-label) {\emph{rotation}};
+
+%draw reflection
+\draw (-4,0)  +(45:2) coordinate(reflect-left-2) -- +(90:2) coordinate(reflect-left-1) -- +(135:2) coordinate(reflect-left-8) -- +(180:2) coordinate(reflect-left-7) -- +(225:2) coordinate(reflect-left-6) -- +(270:2) coordinate(reflect-left-5) -- +(315:2) coordinate(reflect-left-4) -- +(360:2) coordinate(reflect-left-3) -- cycle;
+
+\node [above] at (reflect-left-1) {$1$};
+\node [above right] at (reflect-left-2) {$2$};
+\node [right] at (reflect-left-3) {$3$};
+\node [below right] at (reflect-left-4) {$4$};
+\node [below] at (reflect-left-5) {$5$};
+\node [below left] at (reflect-left-6) {$6$};
+\node [left] at (reflect-left-7) {$7$};
+\node [above left] at (reflect-left-8) {$8$};
+
+\draw (4,0)  +(45:2) coordinate(reflect-right-8) -- +(90:2) coordinate(reflect-right-1) -- +(135:2) coordinate(reflect-right-2) -- +(180:2) coordinate(reflect-right-3) -- +(225:2) coordinate(reflect-right-4) -- +(270:2) coordinate(reflect-right-5) -- +(315:2) coordinate(reflect-right-6) -- +(360:2) coordinate(reflect-right-7) -- cycle;
+
+\node [above] at (reflect-right-1) {$1$};
+\node [above left] at (reflect-right-2) {$2$};
+\node [left] at (reflect-right-3) {$3$};
+\node [below left] at (reflect-right-4) {$4$};
+\node [below] at (reflect-right-5) {$5$};
+\node [below right] at (reflect-right-6) {$6$};
+\node [right] at (reflect-right-7) {$7$};
+\node [above right] at (reflect-right-8) {$8$};
+
+\coordinate (reflect-label) at (0,0);
+\coordinate (reflect-head-arrow) at (-1.2,0);
+\coordinate (reflect-tail-arrow) at (1.2,0);
+
+\draw [->] (reflect-head-arrow) -- (reflect-tail-arrow) ;
+\node [above] at (reflect-label) {\emph{reflection}};
+
+\end{tikzpicture}

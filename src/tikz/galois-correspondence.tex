@@ -1,0 +1,42 @@
+\begin{tikzpicture}[scale=0.8]
+
+\coordinate (E) at (0,6);
+\coordinate (id) at (3,6);
+
+\coordinate (L) at (0,4);
+\coordinate (G-E-L) at (3,4);
+
+\coordinate (K) at (0,2);
+\coordinate (G-E-K) at (3,2);
+
+\coordinate (F) at (0,0);
+\coordinate (G-E-F) at (3,0);
+
+\node at (E)  {$E$};
+\node at (id)  {$\{  \identity \}$};
+
+\node at (L)  {$L$};
+\node at (G-E-L)  {$G(E/L)$};
+
+\node at (K)  {$K$};
+\node at (G-E-K)  {$G(E/K)$};
+
+\node at (F)  {$F$};
+\node at (G-E-F)  {$G(E/F)$};
+
+\draw  ([yshift=-10]E) -- ([yshift=10]L);
+\draw  ([yshift=-10]L) -- ([yshift=10]K);
+\draw  ([yshift=-10]K) -- ([yshift=10]F);
+
+\draw  ([yshift=-10]id) -- ([yshift=10]G-E-L);
+\draw  ([yshift=-10]G-E-L) -- ([yshift=10]G-E-K);
+\draw  ([yshift=-10]G-E-K) -- ([yshift=10]G-E-F);
+
+\draw [->] ([xshift=10]E) -- ([xshift=-20]id);
+\draw [->] ([xshift=10]L) -- ([xshift=-30]G-E-L);
+\draw [->] ([xshift=10]K) -- ([xshift=-30]G-E-K);
+\draw [->] ([xshift=10]F) -- ([xshift=-30]G-E-F);
+
+\end{tikzpicture}
+
+

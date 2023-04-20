@@ -1,0 +1,17 @@
+\begin{tikzpicture}[scale=0.7]
+
+\coordinate (pt-a-bottom) at (0,0);
+\coordinate (pt-a-top) at (-1,2);
+\coordinate (pt-b-top) at (1,2);
+
+\node at (pt-a-bottom) {$a$};
+\node at (pt-a-top) {$a$};
+\node at (pt-b-top) {$b$};
+
+\draw (-3,1) -- (-2,1) (2,1) -- (3,1);
+
+\draw (-2,1) -- (-2,0) -- ([xshift=-10]pt-a-bottom)  ([xshift=10]pt-a-bottom) -- (2,0) -- (2,1);
+
+\draw (-2,1) -- (-2,2) -- ([xshift=-10]pt-a-top)  ([xshift=10]pt-a-top) --  ([xshift=-10]pt-b-top)  ([xshift=10]pt-b-top) -- (2,2) -- (2,1);
+
+\end{tikzpicture}

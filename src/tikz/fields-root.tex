@@ -1,0 +1,24 @@
+\begin{tikzpicture}[scale=0.7]
+
+\coordinate (A) at (-5,0);
+\coordinate (B) at (110:5);
+\coordinate (C) at (5,0);
+\coordinate (D) at (110:5 |- 0,0);
+\coordinate (alpha) at (1.3,0);
+\coordinate (pt-1) at (-3.3,0);
+\coordinate (pt-x) at (110:5 |- 0,2.2);
+
+\node [below] at (A)  {$A$};
+\node [above] at (B)  {$B$};
+\node [below] at (C)  {$C$};
+\node [below] at (D)  {$D$};
+\node [above] at (alpha)  {$\alpha$};
+\node [above] at (pt-1)  {1};
+\node [right] at (pt-x) {$x$};
+
+\draw  (-5.5,0) -- (5.5,0);
+\draw (C) arc (0:180:5);
+\draw (C) -- (B) -- (A);
+\draw (B) -- (D);
+
+\end{tikzpicture}

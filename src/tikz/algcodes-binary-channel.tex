@@ -1,0 +1,30 @@
+\begin{tikzpicture}[scale=1.2]
+
+\coordinate (top-left) at (0,2);
+\coordinate (top-right) at (3,2);
+\coordinate (bottom-left) at (0,0);
+\coordinate (bottom-right) at (3,0);
+\coordinate (top-p-label) at (1.5,2);
+\coordinate (bottom-p-label) at (1.5,0);
+\coordinate (top-q-label) at (1.8,1.4);
+\coordinate (bottom-q-label) at (1.8,0.6);
+
+\draw [->] (top-left) -- (top-right);
+\draw [->] (bottom-left) -- (bottom-right);
+
+\draw [->] ([yshift=-5]top-left) -- ([yshift=5]bottom-right);
+\draw [->] ([yshift=5]bottom-left) -- ([yshift=-5]top-right);
+
+\node [left] at (top-left) {$0$};
+\node [right] at (top-right) {$0$};
+
+\node [left] at (bottom-left) {$1$};
+\node [right] at (bottom-right) {$1$};
+
+\node [above] at (top-p-label) {$p$};
+\node [below] at (bottom-p-label) {$p$};
+
+\node at (top-q-label) {$q$};
+\node at (bottom-q-label) {$q$};
+
+\end{tikzpicture}
