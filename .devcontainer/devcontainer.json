@@ -50,6 +50,8 @@
     //     is created. See the <a href="https://containers.dev/implementors/json_reference/#lifecycle-scripts">docs</a>.</p>
     "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
 
+    "postStartCommand": "./.devcontainer/postStartCommand.sh",
+
     // <p>Use a Dockerfile to build a container, so that users see very quick startup times.<p>
     "build": {
         "dockerfile": "Dockerfile"
