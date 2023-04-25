@@ -48,9 +48,9 @@
     },
     // <p>Use <code>postCreateCommand</code> to run commands after the container
     //     is created. See the <a href="https://containers.dev/implementors/json_reference/#lifecycle-scripts">docs</a>.</p>
-    "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+    "postCreateCommand": "sh .devcontainer/postCreateCommand.sh",
 
-    "postStartCommand": "./.devcontainer/postStartCommand.sh",
+    "postStartCommand": "sh .devcontainer/postStartCommand.sh",
 
     // <p>Use a Dockerfile to build a container, so that users see very quick startup times.<p>
     "build": {
