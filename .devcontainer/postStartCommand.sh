@@ -6,9 +6,11 @@
 #git pull origin main
 #git reset --hard origin/main
 
+xdg-settings set default-web-browser w3m.desktop
+
 # Build pretext project
-pretext build
-pretext generate
+#pretext build
+#pretext generate
 pretext view web &
 # The command pretext view web starts a local server which creates a process that does not end until the user manually ends it. This means that any command that comes after pretext view web will not run unless the local server is manually closed.
 xdg-open http://localhost:8000
