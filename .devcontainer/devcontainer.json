@@ -82,6 +82,7 @@
                 "CodeChat.codechat",
                 "mshr-h.VerilogHDL",
                 "ms-vscode.live-server",
+                "ms-vsliveshare.vsliveshare",
                 "oscarlevin.pretext-tools"
             ]
         }
