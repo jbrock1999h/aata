@@ -13,4 +13,4 @@ python3 -m pip install --upgrade CodeChat-Server runestone pretext
 
 apt install -y hub
 
-apt install -y xdg-utils
+#apt install -y xdg-utils

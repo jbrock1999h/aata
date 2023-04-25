@@ -11,4 +11,4 @@
 #pretext generate
 pretext view web &
 # The command pretext view web starts a local server which creates a process that does not end until the user manually ends it. This means that any command that comes after pretext view web will not run unless the local server is manually closed.
-xdg-open http://localhost:8000
+xdg-open http://localhost:8000-.preview.app.github.dev
