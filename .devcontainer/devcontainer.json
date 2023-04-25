@@ -18,7 +18,9 @@
         27377,
         // <p>The port used by a websocket connection between the CodeChat
         //     Server and the CodeChat Client.</p>
-        27378
+        27378,
+
+        8000
     ],
     "portsAttributes": {
         "27376": {
@@ -39,6 +41,14 @@
         },
         "27378": {
             "label": "CodeChat Client<->Server websocket",
+            "requireLocalPort": true,
+            // <p>Likewise, not yet supported. It's used by the CodeChat Client
+            //     in the local browser to communicate with the CodeChat Server
+            //     in the codespaces container using a websocket.</p>
+            "visibility": "public"
+        },
+        "8000": {
+            "label": "Pretext View Web Port",
             "requireLocalPort": true,
             // <p>Likewise, not yet supported. It's used by the CodeChat Client
             //     in the local browser to communicate with the CodeChat Server

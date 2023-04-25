@@ -6,8 +6,6 @@
 #git pull origin main
 #git reset --hard origin/main
 
-xdg-settings set default-web-browser w3m.desktop
-
 # Build pretext project
 #pretext build
 #pretext generate
