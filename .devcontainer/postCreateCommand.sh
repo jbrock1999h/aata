@@ -6,7 +6,7 @@ echo $GITHUB_TOKEN >> my_token.txt
 unset GITHUB_TOKEN
 gh auth login --with-token < my_token.txt
 gh repo fork $GITHUB_SERVER_URL/$GITHUB_REPOSITORY
-git remote add origin $GITHUB_SERVER_URL/$GITHUB_REPOSITORY
+git remote add origin $GITHUB_SERVER_URL/$GITHUB_USER/aata
 
 # The codespace tends to start under the main branch by default, and if the remotes aren't set up correctly you cannot change it to master. This is the line of code that would allow you to automatically set the branch to master if you have origin set:
 git checkout --track origin/master
