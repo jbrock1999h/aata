@@ -11,7 +11,7 @@ apt install -y --no-install-recommends python3-pip texlive texlive-latex-extra t
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade CodeChat-Server runestone pretext
 
-apt install -y hub
+#apt install -y hub
 
 type -p curl >/dev/null || (apt update && apt install curl -y)
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
@@ -21,6 +21,10 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of
 && apt install gh -y
 
 #apt install -y xdg-utils
+
+# Create a new PreTeXt project or update an existing one
+pretext new -d .
+pretext init --refresh
 
 # Build pretext project
 pretext build
