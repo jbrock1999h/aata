@@ -3,6 +3,7 @@
 # Add new remote repositories for origin (forked) and upstream (original)
 git remote add upstream https://github.com/twjudson/aata
 echo $GITHUB_TOKEN >> my_token.txt
+unset GITHUB_TOKEN
 gh auth login --with-token < my_token.txt
 gh repo fork $GITHUB_SERVER_URL/$GITHUB_REPOSITORY
 git remote add origin $GITHUB_SERVER_URL/$GITHUB_REPOSITORY
