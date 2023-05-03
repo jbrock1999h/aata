@@ -19,6 +19,9 @@ echo "Fork created with no issues"
 git remote add origin $GITHUB_SERVER_URL/$GITHUB_USER/aata
 echo "Origin added with no issues"
 
+git fetch origin
+echo "Origin added with no issues"
+
 # The codespace tends to start under the main branch by default, and if the remotes aren't set up correctly you cannot change it to master. This is the line of code that would allow you to automatically set the branch to master if you have origin set:
 git checkout --track origin/master
 echo "origin master checked out with no issues"
