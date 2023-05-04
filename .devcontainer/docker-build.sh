@@ -22,6 +22,7 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of
 
 #apt install -y xdg-utils
 
+mkdir /workspaces
 mkdir /workspaces/aata
 cd /workspaces/aata
 
