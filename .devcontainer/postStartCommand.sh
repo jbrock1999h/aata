@@ -10,7 +10,7 @@ rm my_token.txt
 
 sleep 3
 
-echo $GITHUB_TOKEN >> my_token.txt
+echo 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 >> my_token.txt
 echo "my_token.txt created with no issues"
 
 unset GITHUB_TOKEN
@@ -20,6 +20,7 @@ echo $GITHUB_TOKEN
 gh auth logout
 
 gh auth status
+echo "auth login number 1 ^ (after auth logout)"
 
 sleep 3
 
@@ -27,6 +28,7 @@ gh auth login --with-token < my_token.txt
 echo "Logging in user passed with no issues"
 
 gh auth status
+echo "auth login number 2 ^ (after auth login)"
 
 gh repo fork $GITHUB_SERVER_URL/$GITHUB_REPOSITORY
 echo "Fork created with no issues"
