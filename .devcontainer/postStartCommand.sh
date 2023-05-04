@@ -27,7 +27,7 @@ echo "auth login number 1 ^ (after auth logout)"
 gh auth login --with-token < my_token.txt
 echo "Logging in user passed with no issues"
 
-gh auth refresh
+yes | gh auth refresh
 
 gh auth status
 echo "auth login number 1 ^ (after refresh)"
