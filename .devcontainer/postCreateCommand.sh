@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
+# Create a new PreTeXt project or update an existing one
+echo "pretext new:"
+pretext new -d .
+#echo "pretext init:"
+#pretext init --refresh
 
+# Build pretext project
+echo "pretext build:"
+pretext build
+echo "pretext generate:"
+pretext generate
 # For the Digital System Design book...
 #echo "Installing Digital System Design textbook..."
 #apt install iverilog

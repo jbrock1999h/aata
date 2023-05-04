@@ -22,18 +22,6 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of
 
 #apt install -y xdg-utils
 
-mkdir /workspaces
-mkdir /workspaces/aata
-cd /workspaces/aata
-
-# Create a new PreTeXt project or update an existing one
-echo "pretext new:"
-pretext new -d .
-echo "pretext init:"
-pretext init --refresh
-
-# Build pretext project
-echo "pretext build:"
-pretext build
-echo "pretext generate:"
-pretext generate
+#mkdir /workspaces
+#mkdir /workspaces/aata
+#cd /workspaces/aata
