@@ -23,9 +23,9 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of
 #apt install -y xdg-utils
 
 # Create a new PreTeXt project or update an existing one
-pretext new -d .
-pretext init --refresh
+#pretext new -d .
+#pretext init --refresh
 
 # Build pretext project
-pretext build
-pretext generate
+#pretext build
+#pretext generate
