@@ -10,7 +10,7 @@ rm my_token.txt
 
 sleep 3
 
-echo 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 >> my_token.txt
+echo $GITHUB_TOKEN >> my_token.txt
 echo "my_token.txt created with no issues"
 
 unset GITHUB_TOKEN
