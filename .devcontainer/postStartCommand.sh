@@ -14,7 +14,11 @@ echo $GITHUB_TOKEN >> my_token.txt
 echo "my_token.txt created with no issues"
 
 unset GITHUB_TOKEN
-echo "github token variable unset with no issues"
+echo "GITHUB_TOKEN unset... Testing:"
+echo $GITHUB_TOKEN
+unset GITHUB_TOKEN
+
+gh auth logout
 
 sleep 3
 
