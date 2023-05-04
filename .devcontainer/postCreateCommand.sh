@@ -4,12 +4,17 @@ echo "pretext new:"
 pretext new -d .
 #echo "pretext init:"
 #pretext init --refresh
+if [ ! -d "/workspaces/aata/output" ]; then
 
-# Build pretext project
-echo "pretext build:"
-pretext build
-echo "pretext generate:"
-pretext generate
+    # Build pretext project
+    echo "pretext build:"
+    pretext build
+    echo "pretext generate:"
+    pretext generate
+    
+else
+    echo "/workspaces/aata/output already exists. Not running build/generate"
+fi
 # For the Digital System Design book...
 #echo "Installing Digital System Design textbook..."
 #apt install iverilog
