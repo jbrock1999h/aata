@@ -33,8 +33,8 @@ echo $GITHUB_TOKEN >> my_token.txt
 #gh auth status
 #echo "auth login number 1 ^ (after refresh)"
 
-gh repo fork $GITHUB_SERVER_URL/$GITHUB_REPOSITORY
-echo "Fork created with no issues"
+#gh repo fork $GITHUB_SERVER_URL/$GITHUB_REPOSITORY
+#echo "Fork created with no issues"
 
 git remote add origin $GITHUB_SERVER_URL/$GITHUB_USER/aata
 echo "Origin added with no issues"
