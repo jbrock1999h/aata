@@ -16,14 +16,17 @@ echo "my_token.txt created with no issues"
 unset GITHUB_TOKEN
 echo "GITHUB_TOKEN unset... Testing:"
 echo $GITHUB_TOKEN
-unset GITHUB_TOKEN
 
 gh auth logout
+
+gh auth status
 
 sleep 3
 
 gh auth login --with-token < my_token.txt
 echo "Logging in user passed with no issues"
+
+gh auth status
 
 gh repo fork $GITHUB_SERVER_URL/$GITHUB_REPOSITORY
 echo "Fork created with no issues"
