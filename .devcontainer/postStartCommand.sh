@@ -8,11 +8,15 @@ echo "Remote upstream add passed with no issues"
 
 rm my_token.txt
 
+sleep 3
+
 echo $GITHUB_TOKEN >> my_token.txt
 echo "my_token.txt created with no issues"
 
 unset GITHUB_TOKEN
 echo "github token variable unset with no issues"
+
+sleep 3
 
 gh auth login --with-token < my_token.txt
 echo "Logging in user passed with no issues"
