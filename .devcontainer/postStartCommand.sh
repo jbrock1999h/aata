@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Reset to origin main (This is for if the codespace has not caught up to changes made previously)
 #git pull origin main
 #git reset --hard origin/main
@@ -51,5 +53,5 @@ pretext view web --watch
 # The command pretext view web starts a local server which creates a process that does not end until the user manually ends it. This means that any command that comes after pretext view web will not run unless the local server is manually closed.
 #pretext view web &
 
-# Running pretext view web from the postStartCommand.sh file does not cause the textbook to automatically open, so we were experimenting on ways to open the port through the command line. It did not work out.
+# Running pretext view web from the postStartCommand.sh file does not cause the textbook to automatically open, so we were experimenting on ways to open the port through the command line. This did not work, and we think it is because we were trying to do this from within a container using a Command Line Interface. Instead, we are going to describe the process to connect manually in a tutorial.
 #xdg-open http://localhost:8000-.preview.app.github.dev

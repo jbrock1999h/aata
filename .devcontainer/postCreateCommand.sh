@@ -11,15 +11,11 @@ pretext new -d .
 #echo "pretext init:"
 #pretext init --refresh
 
-echo "Working Directory:"
-pwd
-echo "\n ls: \n"
-ls
-echo "\n"
-
+# This will check to see if the textbook has already been built by seeing if the "output" directory exists.
+# The output directory is where pretext build sends the HTML of the textbook that it builds, and if pretext build hasn't run yet, the output directory would not exist.
 if [ ! -d "/workspaces/aata/output" ]; then
 
-    # Build pretext project
+    # Pretext build and generate will create a series of files that make up the textbook described by the source material.
     echo "pretext build:"
     pretext build
     echo "pretext generate:"
