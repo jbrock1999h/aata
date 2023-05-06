@@ -8,7 +8,7 @@
 echo "pretext new:"
 pretext new -d .
 
-#echo "pretext init:"
+# This is used to make sure that all required pretext files are present. It will create the files that aren't present, but it will create temp files of any that are, so it needed to be commented out to not flood our directories with tmp files.
 #pretext init --refresh
 
 # This will check to see if the textbook has already been built by seeing if the "output" directory exists.
