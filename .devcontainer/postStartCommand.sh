@@ -44,10 +44,19 @@ git fetch origin
 # The codespace tends to start under the main branch by default, and if the remotes aren't set up correctly you cannot change it to master. This is the line of code that would allow you to automatically set the branch to master if you have origin set:
 git checkout --track origin/master
 
+# This will make the view_web.sh file executable before it is called using the postAttachCommand option in devcontainer.json.
+#chmod 777 view_web.sh
+
+# Pretext view web would not work because it does not update automatically, but pretext view web --watch kills itself in less than a minute by spawning creating itself over and over again. This creates a large burden of memory usage, which causes the sytem to kill it quickly.
+# We've decided to direct the users towards the pretext button at the bottom of the screen, which will bring them through a seris of options for pretext commands. This will let them view their textbooks at their discretion.
+#
+#
 # This will start the web server that will allow you to view the textbook after editing it. Usually, you would need to run "pretext build" after altering the textbook, but the --watch tag allows pretext to automatically build when the source has been changed. So the user does not need to know the pretext commands to be able to edit and view their book.
-sh view_web.sh &
+#pretext view web --watch
 # The command pretext view web starts a local server which creates a process that does not end until the user manually ends it. This means that any command that comes after pretext view web will not run unless the local server is manually closed.
 #pretext view web &
+#
+#
 
 # Running pretext view web from the postStartCommand.sh file does not cause the textbook to automatically open, so we were experimenting on ways to open the port through the command line. This did not work, and we think it is because we were trying to do this from within a container using a Command Line Interface. Instead, we are going to describe the process to connect manually in a tutorial.
 #xdg-open http://localhost:8000-.preview.app.github.dev

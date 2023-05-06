@@ -93,3 +93,5 @@ GitHub.sublime-settings
 .dropbox.cache
 
 my_token.txt
+
+nohup.out
