@@ -7,8 +7,16 @@
 # Create a new PreTeXt project or update an existing one
 echo "pretext new:"
 pretext new -d .
+
 #echo "pretext init:"
 #pretext init --refresh
+
+echo "Working Directory:"
+pwd
+echo "\n ls: \n"
+ls
+echo "\n"
+
 if [ ! -d "/workspaces/aata/output" ]; then
 
     # Build pretext project
