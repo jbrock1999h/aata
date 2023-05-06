@@ -18,24 +18,19 @@
         textbook's Codespace.</em></p>
 <p><em><img src="images/Tutorial/Green_Button.png" alt="" width="849"
             height="992"></em></p>
-<p>Github will take a short period of time (usually not more than a minute) to
-    create your Codespace. Once it boots up, you should see something like
-    this:<br><img src="images/Tutorial/Blank_Codespace.png" alt="" width="1218"
-        height="590"></p>
+<p>Github will take a short period of time (usually not more than thirty
+    seconds) to create your Codespace. Once it boots up, you should see
+    something like this:<br><img src="images/Tutorial/Blank_Codespace.png"
+        alt="" width="1218" height="590"></p>
 <p>When this screen appears, the Codespace will still be working in the
     background to run the textbook build (unless they have already been built
     in your Codespace). This will take from a few seconds to a few minutes
     depending on the size of your source material.</p>
-<div>&nbsp;</div>
-<p>Once your textbook is built, you can edit it as you usually would. <span
-        style="background-color: rgb(251, 238, 184);">Once you have made the
-        changes that you want to make, you can see the results of your editing
-        immediately by going to the "ports" tab that can be seen at the bottom
-        of the above screenshot and clicking the link next to "Pretext View Web
-        Port".</span> <span style="background-color: rgb(248, 202, 198);">I
-        think we need to change this since the pretext view web --watch isn't
-        working</span><br><img src="images/Tutorial/Ports.png" alt=""
-        width="888" height="136"></p>
+<p>Once your textbook is built, you can edit it as you usually would. Once you
+    have made the changes that you want to make, you can see the results of
+    your editing by going to the "ports" tab that can be seen at the bottom of
+    the above screenshot and clicking the web icon next to "Pretext View Web
+    Port".<br><img src="images/Tutorial/view_web.png" alt=""></p>
 <p>Once you are done making changes, you can save your changes by moving to the
     "source control" window by clicking the branching icon on the left side of
     your screen (see below), adding all changed files by pressing the plus icon
