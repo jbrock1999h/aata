@@ -6,15 +6,19 @@
     in the cloud. We are using this platform to set up a way for Runestone
     authors to quickly and easily update their textbooks from anywhere.</p>
 <p>First, create a Github account if you do not already have one.</p>
-<p>Then, navigate to the textbook's repository (EX:
-    https://github.com/jbrock1999h/aata), click the green "Use this template"
-    at the top right, and "Open in Codespace" in the dropdown menu. <em>Note:
-        This step will eventually be replaced by an "edit me" button being
-        placed in the textbook that would directly link to the textbook's
-        Codespace.</em></p>
+<p>Next, navigate to the textbook's repository (EX:
+    https://github.com/jbrock1999h/aata) and click the "Fork" button at the top
+    right. Then click "Create fork" without changing any of the fields.</p>
+<p><img src="images/Tutorial/Gh_Fork.png" alt="" width="861" height="420"></p>
+<p>Finally, to get started editing the textbook, navigate back to the
+    textbook's repository (EX: https://github.com/jbrock1999h/aata), click the
+    green "Use this template" at the top right, and "Open in Codespace" in the
+    dropdown menu. <em>Note: This step will eventually be replaced by an "edit
+        me" button being placed in the textbook that would directly link to the
+        textbook's Codespace.</em></p>
 <p><em><img src="images/Tutorial/Green_Button.png" alt="" width="849"
             height="992"></em></p>
-<p>Github will take a short period of time (usually not more than 5 minutes) to
+<p>Github will take a short period of time (usually not more than a minute) to
     create your Codespace. Once it boots up, you should see something like
     this:<br><img src="images/Tutorial/Blank_Codespace.png" alt="" width="1218"
         height="590"></p>
@@ -22,44 +26,16 @@
     background to run the textbook build (unless they have already been built
     in your Codespace). This will take from a few seconds to a few minutes
     depending on the size of your source material.</p>
-<div>
-    <div>We had initially hoped to create this Codespace such that all setup
-        would be done automatically, but we ran into some issues with changing
-        the automatic working directory for git. We need the origin to be
-        defined using the URL of the user's repository, but were unable to find
-        a way to automate the process of finding the URL from within
-        Codespaces. So, we need the user to manually publish their fork and set
-        their origin remote so that their work later down the line is committed
-        to the correct branch of the repository. First, you will need to go
-        into the "Source Control" tab on the left side of your screen and click
-        the "publish" button:</div>
-    <div><img src="images/Tutorial/Publish.png" alt="" width="377"
-            height="392"></div>
-    <div>A prompt will come up saying that you do not have permission to push
-        to the repository; click "Create Fork". This will create a repository
-        under your account that is exactly the same as the original repository.
-    </div>
-    <div>&nbsp;</div>
-    <div><img src="images/Tutorial/Create_Fork.png" alt="" width="654"
-            height="282"></div>
-    <div>For this next step, we will need the URL for the repository you just
-        created. You can get the URL by going to your Github profile,
-        navigating to your repositories, and then clicking on the textbook
-        repository. Just copy the URL of the repository and navigate back to
-        your open Codespace. Finally, go into the terminal at the bottom of
-        your screen and enter the next two commands:</div>
-    <div>&nbsp;</div>
-    <div>git remote add origin *URL for your repository here*</div>
-    git checkout --track origin/master
-</div>
 <div>&nbsp;</div>
-<div>After these are entered, you will be set to continue forward.</div>
-<p>Next, you can edit your textbook as you usually would. Once you have made
-    the changes that you want to make, you can see the results of your editing
-    immediately by going to the "ports" tab that can be seen at the bottom of
-    the above screenshot and clicking the link next to "Pretext View Web
-    Port".<br><img src="images/Tutorial/Ports.png" alt="" width="888"
-        height="136"></p>
+<p>Once your textbook is built, you can edit it as you usually would. <span
+        style="background-color: rgb(251, 238, 184);">Once you have made the
+        changes that you want to make, you can see the results of your editing
+        immediately by going to the "ports" tab that can be seen at the bottom
+        of the above screenshot and clicking the link next to "Pretext View Web
+        Port".</span> <span style="background-color: rgb(248, 202, 198);">I
+        think we need to change this since the pretext view web --watch isn't
+        working</span><br><img src="images/Tutorial/Ports.png" alt=""
+        width="888" height="136"></p>
 <p>Once you are done making changes, you can save your changes by moving to the
     "source control" window by clicking the branching icon on the left side of
     your screen (see below), adding all changed files by pressing the plus icon
